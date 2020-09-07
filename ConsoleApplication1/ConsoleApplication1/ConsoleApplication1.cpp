@@ -115,7 +115,7 @@ int _tmain(int argc, _TCHAR* argv[])
 		case 6:	while (demoTree.Root)
 			demoTree.deleteByNode(demoTree.Root);
 			break;
-		case 7: cout << "privet kak dela" << endl;
+		
 		}
 	}
 	return 0;
