@@ -1,1 +1,4 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(411,5): error MSB8020: Не удается найти средства сборки для Visual Studio 2013 (набор инструментов платформы = "v120"). Чтобы выполнить сборку с использованием средств сборки v120 установите средства сборки Visual Studio 2013.  Кроме того, можно выполнить обновление до текущей версии средств Visual Studio, перейдя в меню "Проект" или щелкнув решение правой кнопкой мыши и выбрав "Обновить решение...".
+﻿  ConsoleApplication1.cpp
+C:\Users\User\OAP\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(42,32): warning C4474: "fscanf_s" : для строки формата передано слишком много аргументов
+C:\Users\User\OAP\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(42,32): message : заполнители и их параметры ожидают переменное число аргументов в количестве 1, но было предоставлено 2
+  ConsoleApplication1.vcxproj -> C:\Users\User\OAP\ConsoleApplication1\Debug\ConsoleApplication1.exe

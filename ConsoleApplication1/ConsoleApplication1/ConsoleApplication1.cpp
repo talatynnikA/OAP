@@ -33,6 +33,7 @@ bool buildTree(char *FileName, btree::Object& tree) //Построение дерева из файла
 	if (inFile == NULL)
 	{
 		cout << "Ошибка открытия входного файла" << endl;
+		cout << "new information" << endl;
 		rc = false; return rc;
 	}
 	while (!feof(inFile)) // заполнение дерева 
@@ -82,6 +83,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	for (;;)
 	{
 		NodeTree *a = new NodeTree;
+		cout << "new information" << endl;
 		cout << "1 - вывод дерева на экран" << endl;
 		cout << "2 - добавление элемента" << endl;
 		cout << "3 - удаление элемента" << endl;
@@ -96,13 +98,13 @@ int _tmain(int argc, _TCHAR* argv[])
 		case 1:  	if (demoTree.Root)
 			demoTree.Root->scanByLevel(printNode);
 					else
-						cout << "Дерево пустое" << endl;
+						cout << "Дерево пустое..." << endl;
 			break;
-		case 2: 	cout << "введите ключ" << endl;  cin >> k;
+		case 2: 	cout << "введите ключь" << endl;  cin >> k;
 			a->key = k;
 			demoTree.insert(a);
 			break;
-		case 3:  	cout << "введите ключ" << endl;  cin >> k;
+		case 3:  	cout << "введите ключ:" << endl;  cin >> k;
 			a->key = k;
 			demoTree.deleteByData(a);
 			break;
@@ -113,6 +115,7 @@ int _tmain(int argc, _TCHAR* argv[])
 		case 6:	while (demoTree.Root)
 			demoTree.deleteByNode(demoTree.Root);
 			break;
+		case 7: cout << "privet kak dela" << endl;
 		}
 	}
 	return 0;
